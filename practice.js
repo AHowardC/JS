@@ -1,7 +1,10 @@
-function aCoolFunction(arg1, a) {
-	if (true) {
-		// do this				
-	} else {
-		// do that
-	};
+dog = {
+	sound: 'woof',
+	talk: function(){
+		console.log(this.sound)
+	}
 }
+
+let button = document.getElementById('myButton')
+
+button.addEventListener('click', dog.talk.bind(dog))
