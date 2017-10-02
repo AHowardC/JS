@@ -69,6 +69,10 @@ var birthday = new Date(1932, 11, 7)
 BDays = [nameOfTheDate, birthday]
 // console.dir(BDays)
 
+let cat = {breed: 'munchkin'}
+let mycat = {name: 'Fluffy'}
+Object.setPrototypeOf(mycat, cat)
+console.dir(mycat.breed)
 
 
 
